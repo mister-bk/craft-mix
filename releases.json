@@ -1,12 +1,20 @@
 [
     {
-      "version": "1.1.0",
-      "downloadUrl": "https://github.com/mister-bk/craft-mix/archive/v1.1.0.zip",
-      "date": "2017-06-30T09:30:00Z",
-      "notes": [
-          "[Changed] Fix up the file extension detection"
-      ]
-  },
+        "version": "1.1.1",
+        "downloadUrl": "https://github.com/mister-bk/craft-mix/archive/v1.1.1.zip",
+        "date": "2017-06-30T09:45:00Z",
+        "notes": [
+            "[Changed] Fix up the version number"
+        ]
+    },
+    {
+        "version": "1.1.0",
+        "downloadUrl": "https://github.com/mister-bk/craft-mix/archive/v1.1.0.zip",
+        "date": "2017-06-30T09:30:00Z",
+        "notes": [
+            "[Changed] Fix up the file extension detection"
+        ]
+    },
     {
         "version": "1.0.0",
         "downloadUrl": "https://github.com/mister-bk/craft-mix/archive/v1.0.0.zip",
