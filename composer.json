@@ -1,0 +1,23 @@
+{
+    "name": "misterbk/craft-mix",
+    "description": "Helper plugin for Laravel Mix in Craft CMS templates",
+    "version": "1.0.0",
+    "type": "craft-plugin",
+    "license": "MIT",
+    "keywords": [
+        "craft",
+        "craft2",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "mix",
+        "laravel-mix"
+    ],
+    "authors": [
+        {
+            "name": "mister bk! GmbH",
+            "email": "info@mister-bk.de",
+            "homepage": "https://www.mister-bk.de/"
+        }
+    ]
+}
