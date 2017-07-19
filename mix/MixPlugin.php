@@ -40,7 +40,7 @@ class MixPlugin extends BasePlugin
      */
     public function getReleaseFeedUrl()
     {
-        return 'https://github.com/mister-bk/craft-mix/blob/master/releases.json';
+        return 'https://raw.githubusercontent.com/mister-bk/craft-mix/master/releases.json';
     }
 
     /**
