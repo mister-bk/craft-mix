@@ -53,12 +53,12 @@ class MixService extends BaseApplicationComponent
         $this->rootPath = str_replace('/craft/', '', CRAFT_BASE_PATH);
         $this->publicPath = trim($settings->publicPath, '/');
         $this->assetPath = trim($settings->assetPath, '/');
-        $this->manifest = implode('/', [
+        $this->manifest = implode('/', array_filter([
             $this->rootPath,
             $this->publicPath,
             $this->assetPath,
             'mix-manifest.json'
-        ]);
+        ]));
     }
 
     /**
@@ -79,7 +79,10 @@ class MixService extends BaseApplicationComponent
             $file = $manifest['/' . ltrim($file, '/')];
         }
 
-        return '/' . $this->assetPath . '/' . ltrim($file, '/');
+        return '/' . implode('/', array_filter([
+            $this->assetPath,
+            ltrim($file, '/')
+        ]));
     }
 
     /**
@@ -96,11 +99,11 @@ class MixService extends BaseApplicationComponent
 
         if ($inline) {
             $versionedFile = strtok($versionedFile, '?');
-            $absoluteFile = implode('/', [
+            $absoluteFile = implode('/', array_filter([
                 $this->rootPath,
                 $this->publicPath,
                 ltrim($versionedFile, '/')
-            ]);
+            ]));
             if (file_exists($absoluteFile)) {
                 $content = file_get_contents($absoluteFile);
 
