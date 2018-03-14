@@ -82,8 +82,9 @@ class MixService extends BaseApplicationComponent
             Craft::info('Mix: ' . printf($e->getMessage()), __METHOD__);
         }
 
-        if ($manifest) {
-            $file = $manifest['/' . ltrim($file, '/')];
+        $fileKey = '/' . ltrim($file, '/');
+        if (is_array($manifest) && isset($manifest[$fileKey])) {
+            $file = $manifest[$fileKey];
         }
 
         return '/' . implode('/', array_filter([
